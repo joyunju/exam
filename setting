@@ -1,0 +1,7 @@
+>> setting
+
+1. Dynamic Web Project 파일 생성
+ㄴ Project name : exam 설정
+ㄴ Next 버튼 선택 > build path remove 후 > Add Folder : src 생성
+ㄴ Next 버튼 선택 > Content directory : WebContent로 변경
+ㄴ 아래 박스 반드시 선택 
