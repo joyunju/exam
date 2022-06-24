@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>변수의 범위</title>
+</head>
+<body>
+	<h1>자바스크립트</h1>
+
+	<h2>변수의 범위</h2>
+
+</body>
+
+	<!-- 변수의 범위 -->
+	<script type="text/javascript">
+	
+		// 중괄호'{}'로 감싼 코드를 블록문(Block Statement)
+		// 1) 블록문 안에 선언된 변수를 로컬 변수 혹은 지역 변수
+		// ㄴ 블록문 내에서만 사용할 수 있는 변수
+		// 2) 전역 변수(Global Variable)
+		// ㄴ 블록문 밖에서 선언한 변수
+		// 파일 어디서나 사용할 수 있다. 
+		
+		
+		
+		
+		// var 를 붙여서 사용하는 것이 좋다.
+		console.log("var를 붙여서 사용");
+
+		// 함수 사용 
+		var name = "global"; // 전역 변수를 선언
+		
+		// 함수 정의
+		function checkscope(){
+			var name = "local"; // 지역 변수를 선언
+			console.log(name); // 전역 변수가 아닌 지역 변수를 사용
+		}
+		
+		checkscope(); // 출력 결과: "local"
+		console.log(name); // 출력 결과: "global"
+	
+	
+	</script>
+	
+	<script type="text/javascript">
+	
+		
+		console.log("var 안붙였을 때");
+
+		var name = "global"; // 전역 변수를 선언
+		
+		// 함수 안에서 var 없이 선언시 전역변수로 선언되서 { } 밖에 있는 변수에 담겨서 위험
+		// ㄴ 그래서 var를 붙여서 사용하는 것이 좋음 
+		function checkscope(){
+			name = "local"; // 전역 변수를 변경
+			name2 = "로컬"; // 암묵적으로 새 전역 변수가 선언됨
+		}
+		
+		checkscope();
+		console.log(name); // 출력결과: "local"
+		console.log(name2); // 출력결과: "로컬"
+	
+	
+	</script>
+	
+</html>
