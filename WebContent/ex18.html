@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>이벤트</title>
+</head>
+<body>
+	<h1>자바스크립트</h1>
+	
+	<h2>이벤트</h2>
+	
+	<input id="left" type="text" value="">
+	+
+	<input id="right" type="text"value="">
+	
+	<br><br>
+	<button id="btnPlus" type="button">더하기</button>
+	
+	<p id="display"> 합계는 ? </p>
+	
+</body>
+
+	<script type="text/javascript">
+		
+		// 윈도우가 로딩되었을 때 실행해주는 함수
+		window.onload=function(){
+			
+			var btn = document.getElementById("btnPlus");
+			//console.log(btn);
+			var left = document.getElementById("left");
+			var right = document.getElementById("right");
+			
+			//클릭시 이벤트 실행 함수 
+			btn.onclick = function(){
+				
+				console.log("클릭시 btn 함수실행");
+				//display.innerHTML = "<font color='pink'>유미<font>";
+				
+				var leftNo = parseInt(left.value);
+				//parseInt() : String -> number 타입으로 변형시켜주기
+				// leftNo 변수 안에 id="left"의 value 값 넣어줘
+				var rightNo = parseInt(right.value);
+				
+				// 데이터 타입 확인
+				console.log(typeof leftNo);
+				console.log(typeof rightNo);
+				
+				// 합계 변수 
+				var sum = leftNo + rightNo;
+				console.log(typeof sum);
+				console.log(sum);
+				
+				// 합계 출력 : id="display" 텍스트 sum 으로 출력
+				display.innerHTML = sum;
+			}
+		}
+			
+	</script>
+	
+	
+
+
+
+
+
+</html>
