@@ -21,7 +21,10 @@
 		var no = array[1];	//array 32 	출력하기 
 		console.log(no);
 		
+		
 		// 2번째 방법 : 배열 선언하기 
+		console.log("------ array2 ------");
+		
 		var array2 = [];
 		array2[0] = 1;
 		array2[1] = 3;
@@ -30,6 +33,28 @@
 		
 		//출력하기 
 		console.log(array2[2]);		// 5
+		
+		// push() 메서드 : 추가하기
+		// 배열의 끝에 하나 이상의 요소를 추가하고, 배열의 새로운 길이를 반환합니다.
+		array2.push(7)		// array2 7을 추가하고 싶다 [1, 3, 5, 7]
+		
+		for(var i=0; i<array2.length; i++){
+			
+			var num = array2[i];
+			console.log(num);
+		}
+		
+		// pop() 메서드 : 맨 끝 제거
+		// ㄴ 배열의 마지막 요소를 제거한 후, 제거한 요소를 반환
+		array2.pop()		
+		
+		for(var i=0; i<array2.length; i++){
+			
+			var num = array2[i];
+			console.log(num);
+			
+		}
+		
 		
 	</script>
 
