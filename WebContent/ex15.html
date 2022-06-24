@@ -12,11 +12,13 @@
 </body>
 	
 	<script type="text/javascript">
-	
+		// 동적인 객체정의
+		// 클래스 없이 바로 인스턴스를 만들어 사용(필요할때 바로 만들어서 사용)
+		
 		var array = [];
 		var guestbookVo = {
 				// 키 : "값", 이렇게 작성
-				name : "오레오",
+				name : "유바비",
 				password : "1234",
 				content: "안녕하세요",
 				showInfo: function (){
@@ -39,6 +41,36 @@
 		
 		// guestbookVo 변수 안에 담겨 있는 showInfo() 함수 출력
 		guestbookVo.showInfo();
+		
+		//////////////////////////////////////////////////
+		var personVo01 = {
+				// 키 : "값", 이렇게 작성
+				name : "유미",
+				hp : "010-1111-1111",
+				company: "02-1111-1111"
+		}
+		
+		console.log(personVo01);
+		
+		//////////////////////////////////////////////////
+		var personVo02 = {
+				name:"구웅",
+				hp:"010-2222-2222"
+		}
+		
+		personVo02.company="02-2222-2222";
+		personVo02.age="45";		// 추가되기 때문에 의도하지 않은거면 주의!
+		console.log(personVo02);
+		
+		//////////////////////////////////////////////////
+		var personVo03 = {};
+		personVo03.name="이효리";
+		personVo03.hp="010-3333-3333";
+		personVo03.company="02-3333-3333";
+		
+		console.log(personVo03);
+		
+		
 		
 	</script>
 
