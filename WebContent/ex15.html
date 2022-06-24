@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>객체</title>
+</head>
+<body>
+	<h1>자바스크립트</h1>
+	
+	<h2>객체</h2>
+	
+</body>
+	
+	<script type="text/javascript">
+	
+		var array = [];
+		var guestbookVo = {
+				// 키 : "값", 이렇게 작성
+				name : "오레오",
+				password : "1234",
+				content: "안녕하세요",
+				showInfo: function (){
+					// this를 꼭 붙여서 사용 
+					console.log(this.name + ", " + this.password + ", " + this.content)
+				}
+		}
+		
+		// 출력 확인 
+		console.log(guestbookVo);
+		
+		var name = guestbookVo.name;
+		console.log(name);
+		
+		var password = guestbookVo.password;
+		console.log(password);
+		
+		var content = guestbookVo.content;
+		console.log(content);
+		
+		// guestbookVo 변수 안에 담겨 있는 showInfo() 함수 출력
+		guestbookVo.showInfo();
+		
+	</script>
+
+
+
+
+
+</html>
