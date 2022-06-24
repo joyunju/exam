@@ -39,9 +39,14 @@
 		
 		console.log("------ array2 -------");
 		
-		var personVo = {}
+		// 객체 생성 
+		var personVo = {
+				name : "루비",
+				hp : "010-5555-5555",
+				company: "02-5555-5555"
+		}
 		
-		var array2 = [273, "문자열", 5>3, plus, function(){return 5+100}, [273,103] ];
+		var array2 = [273, "문자열", 5>3, plus, function(){return 5+100}, [273,103], personVo ];
 		
 		// 출력 
 		console.log(array2[0]);				// 273
@@ -51,7 +56,10 @@
 		console.log(array2[4]);				//ƒ (){return 5+100}
 		console.log(array2[5]);				// (2) [273, 103] 0: 273 1: 103 length: 2[[Prototype]]: Array(0)
 		console.log(array2[5][1]);			// 103
+		console.log(array2[6]);				// {name: '루비', hp: '010-5555-5555', company: '02-5555-5555'}
 		
+		var name = array2[6].name;
+		console.log(name);					// 루비
 		
 		// plus(){}함수 정의 : 이름 있는 함수
 		function plus(a, b) {
