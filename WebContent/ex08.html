@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>별표 만들기</title>
+</head>
+<body>
+	<h1>자바스크립</h1>
+
+	<h2>별 그리기</h2>
+</body>
+
+<!-- 
+<script type="text/javascript">
+
+	var star = "";
+	
+	for(var i =0; i<5; i++){
+		star += "*";
+		console.log(star);
+		document.write(star);
+		document.write("<br>");
+		
+	}
+	console.log("\n"); 		//줄바꿈 
+	
+</script>
+ -->
+ 
+<script type="text/javascript">
+
+	for (var y = 1; y <= 5; y++) {
+
+		for (var x = 1; x <= y; x++) {
+			document.write("*");
+			
+		}
+		document.write("<br>");
+
+	}
+</script>
+
+</html>
