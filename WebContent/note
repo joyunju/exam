@@ -32,7 +32,6 @@ var no2 = makeSum(4, 7);
 
 ------------------------------------
 
-
 <script type="text/javascript">
 	var testB = function() {
 	console.log("익명함수 실행");
