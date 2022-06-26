@@ -1,0 +1,43 @@
+>> ex09.html
+ㄴ java 와 javascript 함수 사용 비교 
+
+>> java 문법
+1. 클래스 생성 : Math.java : 정의 
+	// 필드 
+	// 생성자 
+	// 메소드 - gs
+	// 메소드 일반 
+	public int makeSum(int a, int b) {
+		// 코드 
+		int sum = a+ b;
+		return sum;
+	}
+
+2. 메모리 : 사용 
+Math math = new Math();
+math.makeSum(3, 5); 
+
+---------------------------------
+
+>> javascript 문법 
+
+function makeSum(a, b) {
+	var sum = a+b;
+	returm sum;
+}
+
+사용
+makeSum(3, 5); ()실행
+makeSum()
+
+
+
+
+
+<script type="text/javascript">
+	var testB = function() {
+	console.log("익명함수 실행");
+	};
+	testB(); //함수실행
+</script>
+
