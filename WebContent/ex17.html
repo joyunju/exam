@@ -3,6 +3,11 @@
 <head>
 <meta charset="UTF-8">
 <title>이벤트</title>
+
+<script type="text/javascript" src="./jquery-1.12.4.js"></script>
+
+
+
 </head>
 <body>
 	<h1>자바스크립트</h1>
@@ -21,6 +26,21 @@
 		// 윈도우가 로딩되었을 때 실행해주는 함수
 		window.onload=function(){
 			
+			// jQuery 이벤트 처리
+			var testButton = $("#btn");			//	id는 #, class는 .으로 부르기 
+			var testArea = $("#display");
+			
+			console.log(testButton);
+			
+			testButton.on("click", function(){
+				console.log("클릭 jQuery");
+				
+				//$("#display").html("<font color='lightgreen'>유미의세포들2<font>");
+				testArea.html("<font color='lightgreen'>유미의세포들2<font>");
+			});
+			
+			/*
+			// JavaScript로 이벤트 처리
 			var testButton = document.getElementById("btn");	// id=btn DOM --> 자바스크립트 객체화 
 			// testButton 변수에 담아줘 = document에 id="btn"으로 가지고 있는 요소를
 			var testArea = document.getElementById("display");	// id=display DOM --> 자바스크립트 객체화 
@@ -39,6 +59,7 @@
 				
 
 			};
+			*/
 		}
 	</script>
 	
