@@ -9,7 +9,7 @@
 	
 	<h2>이벤트</h2>
 	
-	<input id="left" type="text" value="">
+	<input id="left" class="red" type="text" value="">
 	+
 	<input id="right" type="text"value="">
 	
@@ -24,6 +24,19 @@
 		
 		// 윈도우가 로딩되었을 때 실행해주는 함수
 		window.onload=function(){
+			
+			// getElementsByTagName
+			// : 특정 태그명을 가진 모든 요소를 선택
+			var btn = document.getElementsByTagName("button");
+			console.log(btn);
+			
+			var inputs = document.getElementsByTagName("input");
+			console.log(inputs);
+			console.log(inputs[0]);
+			console.log(inputs[1]);
+			
+			// 
+			// class 
 			
 			var btn = document.getElementById("btnPlus");
 			//console.log(btn);
