@@ -11,7 +11,7 @@
 	
 	<input id="left" class="red" type="text" value="">
 	+
-	<input id="right" type="text"value="">
+	<input id="right" class="red" type="text"value="">
 	
 	<br><br>
 	<button id="btnPlus" type="button">더하기</button>
@@ -35,8 +35,12 @@
 			console.log(inputs[0]);
 			console.log(inputs[1]);
 			
-			// 
-			// class 
+			// getElementsByClassName
+			// : 자바스크립트 클래스명 가진 요소를 선택 
+			var tags = document.getElementsByClassName("red");
+			console.log(tags);
+			console.log(tags[0]);
+			console.log(tags[1]);
 			
 			var btn = document.getElementById("btnPlus");
 			//console.log(btn);
