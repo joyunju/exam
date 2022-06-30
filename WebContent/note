@@ -39,3 +39,23 @@ var no2 = makeSum(4, 7);
 	testB(); //함수실행
 </script>
 
+--------------------------------------
+>> 06-24 Fri
+: 계산기 만들기 
+ㄴ html
+ㄴ css
+ㄴ javascript 
+** 사용함수
+: split() / parseInt() / button 속성 value 
+
+
+
+
+
+
+
+
+
+
+
+
